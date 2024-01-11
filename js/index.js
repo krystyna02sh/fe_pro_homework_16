@@ -16,7 +16,7 @@ submitBtn.addEventListener('click', () => {
         textInput.value = "";
     }
     else {
-        alert('Nothig is typed.')
+        alert('Nothig is typed to one of the registration fields.')
     }
 }
 
