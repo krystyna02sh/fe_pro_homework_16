@@ -75,7 +75,6 @@ input[type="text"]::placeholder {
   padding-right: 15px;
 }
 #customAlert {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   inset: 0;

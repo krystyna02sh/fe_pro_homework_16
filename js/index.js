@@ -32,9 +32,17 @@ function addText(title, text) {
     alerText.textContent = text;
 }
 
-alertBtn.addEventListener('click', () => {
+alertBtn.addEventListener('click', function (event) {
     customAlert.classList.remove('active');
     trueAlert.classList.remove('active');
+    event.stopPropagation();
 }
 
+)
+window.addEventListener('click', function (event) {
+    if (event.target === customAlert) {
+        customAlert.classList.remove('active');
+        trueAlert.classList.remove('active');
+    }
+}
 )
